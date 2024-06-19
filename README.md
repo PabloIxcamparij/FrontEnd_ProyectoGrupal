@@ -1,11 +1,25 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+El proyecto es un receetario. Se pueden buscar las recetas por categorias, ver su preparacion y guardarlas en favoritas
 
-Currently, two official plugins are available:
+## Configuracion
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El proyecto hace uso de
 
-## Expanding the ESLint configuration
+Axios
+Zod
+Zustand
+router
+tailwind
+
+## About this
+
+El proyecto hace uso de multiples stores ademas de hacer consumo de una API https://www.themealdb.com/api.php
+
+- Schemas se donde se determian la estructura de las respuestas del API
+- Services es deonde se hacen las peticiones al API
+- Types es deonde se definene los types que hace uso el .ts, aqui tambien para su construccion se usan las Schemas
+- Stores es donde se encuentran los metodos de las partes del programa
+
+
 
