@@ -29,10 +29,14 @@ export async function getRecipes(filters: SearchFilter) {
 }
 
 export async function getRecipesById(id: Recipe['idMeal']) {
-    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${id}`
+    const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
     
     const {data} =  await axios(url)
-    const result = RecipeAPIResponseSchema.safeParse(data.recipes[0])
+    console.log(data);
+
+    const result = RecipeAPIResponseSchema.safeParse(data.meals[0])
+    console.log(result);
+
    
     if (result.success) {
         return result.data

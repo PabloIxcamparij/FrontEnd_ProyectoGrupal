@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^2.0.4",
+    "@tailwindcss/line-clamp": "^0.4.4",
     "axios": "^1.7.2",
     "pro": "^0.3.0",
     "react": "^18.2.0",
