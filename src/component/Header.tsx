@@ -5,9 +5,13 @@ import { FormularioBusquedaCategoria } from "./FormularioBusquedaCategoria";
 import FavoritesCard from "../component/FavoritesCard";
 import { Link } from "react-router-dom";
 
-function Header() {
-  const fetchCategories = useAppStore((state) => state.fetchCategories);
-  const favorites = useAppStore((state) => state.favorites);
+export function Header() {
+  
+  const { fetchCategories, favorites } = useAppStore((state) => ({
+    fetchCategories: state.fetchCategories,
+    favorites: state.favorites,
+  }));
+
   const { pathname } = useLocation();
   const isHome = useMemo(() => pathname === "/", [pathname]);
 
@@ -47,7 +51,11 @@ function Header() {
       </div>
 
       {isHome && (
-        <div className="flex justify-around space-x-4 overflow-x-auto gap-4 m-5">
+        <h1 className="text-4xl font-extrabold m-5">Recetas Favoritas </h1>
+      )}
+
+      {isHome && (
+        <div className="flex justify-around space-x-4 overflow-x-auto gap-4 m-2">
           {favorites.map((meals) => (
             <FavoritesCard key={meals.idMeal} recipe={meals} />
           ))}
@@ -57,5 +65,3 @@ function Header() {
     </>
   );
 }
-
-export default Header;

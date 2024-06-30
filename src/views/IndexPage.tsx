@@ -8,7 +8,7 @@ export default function IndexPage() {
 
   return (
     <>
-      <h1 className="text-6xl font-extrabold m-5"> Recetas </h1>
+      <h1 className="text-6xl font-extrabold mb-5 mr-5 ml-5"> Recetas </h1>
 
       {hasRecipes ? (
 
@@ -20,7 +20,7 @@ export default function IndexPage() {
 
       ) : (
         <>
-          <p>No hay resultados, busque por medio del formulario</p>
+          <p className="m-6">No hay resultados, busque por medio del formulario</p>
         </>
       )}
     </>

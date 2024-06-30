@@ -11,7 +11,7 @@ export default function FavoritesCard({ recipe }: RecipeCardProps) {
 
   return (
     <div 
-      className="border shadow-lg rounded-full overflow-hidden cursor-pointer w-30 sm:w-42 flex-none"
+      className="border shadow-lg rounded-full overflow-hidden cursor-pointer w-30 sm:w-42 flex-none mb-10"
       onClick={() => selectRecipe(recipe.idMeal)}
     >
       <img
