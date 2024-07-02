@@ -43,7 +43,6 @@ export const createFavoritesSlice: StateCreator<FavoritesSliceType> = (set, get)
             })
             
             console.log("se han cargado el localStorage");
-
         }
     }
 })

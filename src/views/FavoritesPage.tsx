@@ -21,7 +21,7 @@ export default function FavoritesPage() {
         </div>
       ) : (
         <>
-          <p>No hay resultados, busque por medio del formulario</p>
+          <p>No hay resultados</p>
         </>
       )}
     </>

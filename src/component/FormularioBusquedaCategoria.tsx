@@ -2,6 +2,7 @@ import { useAppStore } from "../stores/useAppStore";
 import { ChangeEvent, FormEvent, useState } from "react";
 
 export function FormularioBusquedaCategoria() {
+
   const categories = useAppStore((state) => state.categories);
   const searchRecipes = useAppStore((state) => state.searchRecipes);
 
@@ -41,11 +42,13 @@ export function FormularioBusquedaCategoria() {
         value={searchFilters.category}
       >
         <option value="">-- Seleccione --</option>
+
         {categories.categories.map((category) => (
           <option value={category.strCategory} key={category.idCategory}>
             {category.strCategory}
           </option>
         ))}
+        
       </select>
 
       <button

@@ -9,8 +9,6 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
   const selectRecipe = useAppStore((state) => state.selectRecipe);
   const favoritesExists = useAppStore((state) => state.favoritesExists);
 
-
-
   return (
     <div
       className="relative border shadow-lg rounded-3xl cursor-pointer"
