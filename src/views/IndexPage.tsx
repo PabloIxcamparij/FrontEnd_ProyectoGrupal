@@ -12,7 +12,7 @@ export default function IndexPage() {
 
       {hasRecipes ? (
 
-        <div className="grid grid-cols-2 md:grid-cols-4 2xl:grid-cols-5 gap-6 m-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 2xl:grid-cols-5 gap-6 m-2">
           {recipies.meals.map((meals) => (
             <RecipeCard key={meals.idMeal} recipe={meals} />
           ))}

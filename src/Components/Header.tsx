@@ -20,9 +20,9 @@ export function Header() {
 
   return (
     <>
-      <div className="flex flex-wrap justify-around md:flex-row md:flex-nowrap bg-orange-400 items-center w-full p-5 gap-6">
+      <div className="flex flex-wrap justify-around lg:flex-row lg:flex-nowrap bg-orange-400 items-center w-full p-5 gap-6">
         
-        <div className="order-1 w-1/2 md:w-1/4">
+        <div className="order-1 w-3/5 sm:h-1/2 lg:w-1/4">
           <Link to="/">
             <img
               src="/img/Logo.png"
@@ -31,14 +31,14 @@ export function Header() {
           </Link>
         </div>
 
-        <div className="order-3 md:order-2 w-full md:w-2/3">{isHome && <FormularioBusquedaCategoria />}</div>
+        <div className="order-3 lg:order-2 w-full lg:w-2/3">{isHome && <FormularioBusquedaCategoria />}</div>
 
-        <div className="order-2 md:order-3">
+        <div className="order-2 lg:order-3">
           <NavLink to="/Favorites">
             {isHome ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="size-8 object-cover transition-transform transform hover:scale-125"
+                className="size-10 sm:size-14 object-cover transition-transform transform hover:scale-125"
                 viewBox="0 0 512 512"
               >
                 <path
@@ -49,7 +49,7 @@ export function Header() {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="size-8 object-cover transition-transform transform hover:scale-125"
+                className="size-10 sm:size-14 object-cover transition-transform transform hover:scale-125"
                 viewBox="0 0 512 512"
               >
                 <path

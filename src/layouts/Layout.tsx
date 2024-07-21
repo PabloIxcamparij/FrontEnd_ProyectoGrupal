@@ -17,7 +17,7 @@ export default function Layout() {
     <>
       <Header />
       
-      <main className="container mx-auto ">
+      <main className="container mx-auto p-4 ">
         <Outlet />
       </main>
 
