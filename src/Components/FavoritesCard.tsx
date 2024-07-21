@@ -11,13 +11,13 @@ export default function FavoritesCard({ recipe }: RecipeCardProps) {
 
   return (
     <div 
-      className="border shadow-lg rounded-full overflow-hidden cursor-pointer w-30 sm:w-42 flex-none mb-10"
+      className="border shadow-lg rounded-full overflow-hidden cursor-pointer w-30 sm:w-42 flex-none"
       onClick={() => selectRecipe(recipe.idMeal)}
     >
       <img
         src={recipe.strMealThumb}
         alt={`Imagen de ${recipe.strMeal}`}
-        className="w-full h-32 sm:h-40 object-cover transition-transform transform hover:scale-110"
+        className="w-full h-32 sm:h-36 object-cover transition-transform transform hover:scale-110"
       />
     </div>  
   );

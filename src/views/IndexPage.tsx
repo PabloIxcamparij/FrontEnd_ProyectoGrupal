@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useAppStore } from "../stores/useAppStore";
-import RecipeCard from "../component/RecipeCard";
+import RecipeCard from "../Components/RecipeCard";
 
 export default function IndexPage() {
   const recipies = useAppStore((state) => state.recipies);
@@ -8,11 +8,11 @@ export default function IndexPage() {
 
   return (
     <>
-      <h1 className="text-6xl font-extrabold mb-5 mr-5 ml-5"> Recetas </h1>
+      <h1 className="text-5xl font-extrabold mb-5"> Recetas </h1>
 
       {hasRecipes ? (
 
-        <div className="grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-5 m-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 2xl:grid-cols-5 gap-6 m-2">
           {recipies.meals.map((meals) => (
             <RecipeCard key={meals.idMeal} recipe={meals} />
           ))}

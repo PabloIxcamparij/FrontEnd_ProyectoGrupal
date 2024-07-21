@@ -2,8 +2,8 @@ import { Outlet } from "react-router-dom";
 import { useAppStore } from "../stores/useAppStore";
 import { useEffect } from "react";
 
-import Modal from "../component/Modal";
-import { Header } from "../component/Header";
+import Modal from "../Components/Modal";
+import { Header } from "../Components/Header";
 
 export default function Layout() {
 
@@ -17,7 +17,7 @@ export default function Layout() {
     <>
       <Header />
       
-      <main className="container mx-auto">
+      <main className="container mx-auto ">
         <Outlet />
       </main>
 

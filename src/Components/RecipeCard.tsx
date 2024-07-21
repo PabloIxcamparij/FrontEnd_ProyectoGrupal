@@ -22,7 +22,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
         }`}
       >
         <svg
-          className={`icono w-6 h-6 stroke-current ${
+          className={`icono w-8 h-8 stroke-current ${
             favoritesExists(recipe.idMeal)
               ? "text-white"
               : "text-black"
