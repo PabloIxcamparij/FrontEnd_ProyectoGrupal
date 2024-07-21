@@ -38,7 +38,7 @@ export function Header() {
             {isHome ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="size-10 sm:size-14 object-cover transition-transform transform hover:scale-125"
+                className="size-8 sm:size-12 md:size-14 object-cover transition-transform transform hover:scale-125"
                 viewBox="0 0 512 512"
               >
                 <path
@@ -49,7 +49,7 @@ export function Header() {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="size-10 sm:size-14 object-cover transition-transform transform hover:scale-125"
+                className="size-8 sm:size-12 md:size-14 object-cover transition-transform transform hover:scale-125"
                 viewBox="0 0 512 512"
               >
                 <path
