@@ -20,7 +20,7 @@ export function Header() {
 
   return (
     <>
-      <div className="flex flex-wrap justify-around lg:flex-row lg:flex-nowrap bg-orange-400 items-center w-full p-5 gap-6">
+      <div className="flex flex-wrap justify-around lg:flex-row lg:flex-nowrap bg-orange-400 items-center w-full p-2 gap-4">
         
         <div className="order-1 w-3/5 sm:h-1/2 lg:w-1/4">
           <Link to="/">
@@ -63,11 +63,11 @@ export function Header() {
       </div>
 
       {isHome && (
-        <h1 className="text-3xl font-extrabold m-5">Recetas Favoritas </h1>
+        <h1 className="text-2xl sm:text-3xl font-extrabold m-5">Favoritas </h1>
       )}
 
       {isHome && (
-        <div className="flex space-x-4 overflow-x-auto gap-4 m-8">
+        <div className="flex space-x-4 overflow-x-auto gap-4 m-4">
           {favorites.map((meals) => (
             <FavoritesCard key={meals.idMeal} recipe={meals} />
           ))}

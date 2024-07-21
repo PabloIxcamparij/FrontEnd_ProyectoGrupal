@@ -11,7 +11,7 @@ export default function FavoritesPage() {
 
   return (
     <>
-      <h1 className="text-5xl font-extrabold mb-5 mt-5"> Favoritos </h1>
+      <h1 className="text-4xl sm:text-5xl font-extrabold mb-5 mt-5"> Favoritos </h1>
 
       {hasRecipes ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 2xl:grid-cols-5 gap-6 m-2">

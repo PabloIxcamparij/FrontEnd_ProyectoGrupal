@@ -8,7 +8,7 @@ export default function IndexPage() {
 
   return (
     <>
-      <h1 className="text-5xl font-extrabold mb-5"> Recetas </h1>
+      <h1 className="text-4xl sm:text-5xl font-extrabold mb-5"> Recetas </h1>
 
       {hasRecipes ? (
 

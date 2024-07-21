@@ -40,7 +40,7 @@ export function FormularioBusquedaCategoria() {
         onChange={handleChange}
         value={searchFilters.category}
       >
-        <option value="">-- Seleccione --</option>
+        <option value="">Seleccione</option>
 
         {categories.categories.map((category) => (
           <option value={category.strCategory} key={category.idCategory}>
